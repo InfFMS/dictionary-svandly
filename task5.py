@@ -4,3 +4,24 @@
 # и предлагает пользователю ввести слово для перевода. 
 # Если введенного слова нет в словаре выводится сообщение "нет такого слова".
 # Используйте словари для словаря:)
+
+letters = {'книга': 'book',
+            'ручка': 'pen',
+            'карандаш': 'pencil',
+            'дом': 'house',
+            'мама': 'mother',
+            'папа': 'father',
+            'дедушка': 'grandfather',
+            'бабушка': 'grandmother',
+            'дядя': 'uncle',
+            'бегать': 'run'}
+
+your_letter = str(input())
+g = 0
+
+for key, value in letters.items():
+	if key == your_letter:
+		print(value)
+		g += 1
+if g == 0:
+	print("нет такого слова")

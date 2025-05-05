@@ -12,3 +12,18 @@ inventory = {
 # удалите "кинжал" из списка, который хранится по ключу "сумка"
 # добавьте 50 к числу, которое хранится по ключу "золото"
 # Выведите на экран обновлённый словарь inventory.
+
+carman_value = ["ракушки", "ягода", "платок"]
+
+add_dict = {"карман" : carman_value}
+
+inventory.update(add_dict)
+
+print(inventory)
+
+inventory['золото'] += int(50)
+inventory['сумка'].sort()
+inventory['сумка'].remove('кинжал')
+
+
+print(inventory)
